@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bestteam.videolibr.SignUpActivity">
+
+    <EditText
+        android:id="@+id/txtUserNameUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:hint="User Name" />
+
+    <EditText
+        android:id="@+id/txtPassUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtUserNameUP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:hint="PassWord"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/txtFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtPassUP"
+        android:layout_alignRight="@+id/txtPassUP"
+        android:layout_below="@+id/txtPassUP"
+        android:layout_marginTop="18dp"
+        android:hint="First Name" />
+
+    <EditText
+        android:id="@+id/txtLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtFirstName"
+        android:layout_alignStart="@+id/txtFirstName"
+        android:layout_centerVertical="true"
+        android:hint="Last Name" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtUserNameUP"
+        android:layout_alignStart="@+id/txtUserNameUP"
+        android:layout_below="@+id/txtLastName"
+        android:layout_marginTop="18dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/txtCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPassUP"
+        android:layout_alignStart="@+id/txtPassUP"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginTop="14dp"
+        android:hint="City" />
+
+    <EditText
+        android:id="@+id/txtStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtCity"
+        android:layout_alignStart="@+id/txtCity"
+        android:layout_below="@+id/txtCity"
+        android:hint="Street" />
+
+
+    <Button
+        android:id="@+id/btnSignUp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Sign Up" />
+
+
+    <Button
+        android:id="@+id/btnUpLoadPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtStreet"
+        android:layout_toEndOf="@+id/txtLastName"
+        android:layout_toRightOf="@+id/txtLastName"
+        android:text="Upload Photo" />
+
+    <Button
+        android:id="@+id/btnUpLoadByCam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/txtStreet"
+        android:layout_toRightOf="@+id/txtStreet"
+        android:text="UpLoad by Cam" />
+
+    <ImageView
+        android:id="@+id/ImageViewCam2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/txtFirstName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtFirstName" />
+
+</RelativeLayout>

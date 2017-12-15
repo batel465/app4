@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bestteam.videolibr.MenuActivity">
+
+    <Button
+        android:id="@+id/btnUserDetails"
+        android:text="User Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+    <Button
+        android:id="@+id/btnMap"
+        android:text="Map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnUserDetails"
+        android:layout_alignLeft="@+id/btnUserDetails"
+        android:layout_alignRight="@+id/btnUserDetails"
+        android:layout_alignStart="@+id/btnUserDetails"
+        android:layout_alignTop="@+id/btnUserDetails"
+        android:layout_marginTop="81dp" />
+
+    <Button
+        android:id="@+id/btnReadMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnMap"
+        android:layout_alignLeft="@+id/btnMap"
+        android:layout_alignRight="@+id/btnMap"
+        android:layout_alignStart="@+id/btnMap"
+        android:layout_below="@+id/btnMap"
+        android:layout_marginTop="35dp"
+        android:text="Read Me" />
+
+</RelativeLayout>
